@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yc & Yx Design Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366F1',   // 靛藍
+                        secondary: '#A855F7', // 亮紫
+                        dark: '#0F172A',      // 深藍底色
+                    }
+                }
+            }
+        }
+    </script>
+        <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .work-image:hover { transform: scale(1.02); transition: 0.5s ease; }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366F1 0%, #A855F7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        br {
+            margin: 200%;
+        }
+    </style>
+    </head>
+    <body class="bg-dark text-gray-200 antialiased selection:bg-primary/30">
+
+        <nav
+            class="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center glass-card border-b-0">
+            <div
+                class="text-xl font-black tracking-tighter text-white">YuChi &
+                YouXuan<span
+                    class="text-primary">.</span></div>
+            <div
+                class="space-x-8 text-sm font-medium tracking-widest uppercase">
+                <a href="#about" class="hover:text-primary transition">關於我們</a>
+                <a href="#works" class="hover:text-primary transition">設計案例</a>
+            </div>
+        </nav>
+
+        <!-- <section
+            class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full z-0">
+                <div
+                    class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
+                <div
+                    class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]"></div>
+            </div>
+
+            <div class="relative z-10 text-center px-6">
+                <h2
+                    class="text-secondary font-mono mb-4 tracking-[0.3em] uppercase">Web
+                    Designer & Developer</h2>
+                <h1
+                    class="text-6xl md:text-8xl font-bold text-white mb-8 tracking-tighter"
+                    style="line-height: 150%;">
+                    打造屬於您的<span class="gradient-text">數位世界</span>
+                </h1>
+                <p
+                    class="max-w-xl mx-auto text-gray-400 text-lg md:text-xl font-light leading-relaxed">
+                    各式風格皆可駕馭、重視使用者體驗與動態互動設計。<br>將複雜的需求轉化為一目了然的網頁介面。
+                </p>
+            </div>
+        </section> -->
+        <section id="about" class="py-32 relative overflow-hidden bg-dark">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="animate-on-scroll">
+                    <h2
+                        class="text-sm font-mono text-primary tracking-[0.5em] mb-6 uppercase italic">Omni-Style
+                        Expertise</h2>
+                    <h3
+                        class="text-4xl md:text-6xl font-bold text-white leading-tight mb-12"
+                        style="line-height: 120%;">
+                        風格不設限<br>
+                        只為 <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">完美呈現</span>
+                        而生
+                    </h3>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="animate-on-scroll glass-card p-10 rounded-3xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 to-transparent hover:border-primary transition-all group relative overflow-hidden">
+                        <div
+                            class="absolute -right-4 -top-4 text-8xl font-black text-white/5 italic select-none">#1</div>
+
+                        <div
+                            class="w-12 h-12 mb-6 rounded-xl bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/30 group-hover:scale-110 transition">
+                            <svg fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" class="w-6 h-6">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+
+                        <div
+                            class="inline-flex items-center rounded-full bg-primary/20 px-3 py-1 text-xs font-bold text-primary mb-4 tracking-wider uppercase">
+                            Award Winner
+                        </div>
+
+                        <h4
+                            class="text-white text-2xl font-bold mb-4">全國競賽網頁設計組<br><span
+                                class="text-primary">蟬聯兩屆第一</span></h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            連續兩年奪冠不只是運氣，而是對使用者行為、視覺平衡與尖端技術整合的極致追求。
+                        </p>
+                    </div>
+
+                    <div
+                        class="animate-on-scroll glass-card p-10 rounded-3xl hover:border-secondary/50 transition-all group"
+                        style="transition-delay: 200ms;">
+                        <div
+                            class="w-12 h-12 mb-6 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary group-hover:scale-110 transition">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+
+                        <div
+                            class="inline-flex items-center rounded-full bg-secondary/20 px-3 py-1 text-xs font-bold text-secondary mb-4 tracking-wider uppercase">
+                            Strategic UX
+                        </div>
+
+                        <h4
+                            class="text-white text-2xl font-bold mb-4">數據導向<br><span
+                                class="text-secondary">精準轉換設計</span></h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            設計不應只是裝飾。透過使用者流向分析，讓您的產品在幾秒鐘內抓住訪客的心。
+                        </p>
+                    </div>
+
+                    <div
+                        class="animate-on-scroll glass-card p-10 rounded-3xl hover:border-white/30 transition-all group"
+                        style="transition-delay: 400ms;">
+                        <div
+                            class="w-12 h-12 mb-6 rounded-xl bg-white/10 flex items-center justify-center text-white group-hover:scale-110 transition shadow-lg shadow-white/5">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                            </svg>
+                        </div>
+
+                        <div
+                            class="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-gray-300 mb-4 tracking-wider uppercase">
+                            Versatile Aesthetics
+                        </div>
+
+                        <h4
+                            class="text-white text-2xl font-bold mb-4">全風格駕馭<br><span
+                                class="text-gray-300">定義視覺多維度</span></h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            跨越視覺邊界，精準轉換各種設計語彙，確保最終產出不僅獨特，更具備無可替代的品牌辨識度。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="works" class="py-32 px-6 max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-20">
+                <div>
+                    <h3 class="text-3xl font-bold text-white">部分設計案例</h3>
+                    <div class="h-1 w-12 bg-primary mt-4"></div>
+                </div>
+                <p class="text-gray-500 font-mono text-sm">WORKS /
+                    2023-2025</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <div class="group">
+                    <a href="https://pan267.github.io/">
+                        <div
+                            class="rounded-3xl overflow-hidden bg-gray-800 aspect-[16/10] relative shadow-2xl group">
+                            <img src="img/img1.png"
+                                alt="作品展示"
+                                class="w-full h-full object-cover work-image cursor-pointer transition-transform duration-500 group-hover:scale-110">
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent pointer-events-none"></div>
+                        </div>
+                    </a>
+                    <div class="mt-8 flex justify-between items-start">
+                        <div>
+                            <h4
+                                class="text-xl font-bold text-white group-hover:text-primary transition">全國競賽作品</h4>
+                            <p
+                                class="text-gray-500 mt-2">此作品聚焦於沉浸式交互體驗，透過動態視覺策略精準捕捉閱聽大眾與評審的目光。</p>
+                        </div>
+                        <div
+                            class="text-primary font-mono text-sm uppercase">2024</div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <a href="http://josieyc.github.io/">
+                        <div
+                            class="rounded-3xl overflow-hidden bg-gray-800 aspect-[16/10] relative shadow-2xl group">
+                            <img src="img/img2.png"
+                                alt="作品展示"
+                                class="w-full h-full object-cover work-image cursor-pointer transition-transform duration-500 group-hover:scale-110">
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent pointer-events-none"></div>
+                        </div>
+                    </a>
+                    <div class="mt-8 flex justify-between items-start">
+                        <div>
+                            <h4
+                                class="text-xl font-bold text-white group-hover:text-primary transition">YcTech
+                                一頁式公司形象網</h4>
+                            <p
+                                class="text-gray-500 mt-2">此作品採用極簡主義美學，輔以深邃的藍紫漸層配色，在簡練的視覺層次中精準形塑出品牌的高端專業感與技術深度。</p>
+                        </div>
+                        <div
+                            class="text-primary font-mono text-sm uppercase">2025</div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <a href="https://ycweb112.github.io/index.html">
+                        <div
+                            class="rounded-3xl overflow-hidden bg-gray-800 aspect-[16/10] relative shadow-2xl group">
+                            <img src="img/img3.png"
+                                alt="作品展示"
+                                class="w-full h-full object-cover work-image cursor-pointer transition-transform duration-500 group-hover:scale-110">
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent pointer-events-none"></div>
+                        </div>
+                    </a>
+                    <div class="mt-8 flex justify-between items-start">
+                        <div>
+                            <h4
+                                class="text-xl font-bold text-white group-hover:text-primary transition">高職專題作品</h4>
+                            <p
+                                class="text-gray-500 mt-2">此作品將傳統藍染工藝深度結合SDGs永續目標，現代極簡的設計與高質感的動態交互。</p>
+                        </div>
+                        <div
+                            class="text-primary font-mono text-sm uppercase">2023</div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <a href="http://203.72.100.60/111_projects/index2.html">
+                        <div
+                            class="rounded-3xl overflow-hidden bg-gray-800 aspect-[16/10] relative shadow-2xl group">
+                            <img src="img/img4.png"
+                                alt="作品展示"
+                                class="w-full h-full object-cover work-image cursor-pointer transition-transform duration-500 group-hover:scale-110">
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent pointer-events-none"></div>
+                        </div>
+                    </a>
+                    <div class="mt-8 flex justify-between items-start">
+                        <div>
+                            <h4
+                                class="text-xl font-bold text-white group-hover:text-primary transition">111年度中壢高商專題網站</h4>
+                            <p
+                                class="text-gray-500 mt-2">此作品運用大膽配色及獨特的像素遊戲風格，打造出屬於111屆獨有的數位冒險樂園。</p>
+                        </div>
+                        <div
+                            class="text-primary font-mono text-sm uppercase">2023</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="py-12 border-t border-gray-800 text-center text-gray-600 text-sm font-mono">
+            &copy; 2026 YuChi & YouXuan DESIGN PORTFOLIO. 以上作品內圖片皆為練習使用，非商用
+        </footer>
+        <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            el.classList.add('transition', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+    </body>
+</html>
